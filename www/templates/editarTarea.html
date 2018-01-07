@@ -1,0 +1,28 @@
+<ion-view view-title="Editar Tarea">
+  <ion-content>
+
+    <div class="list">
+
+      <label class="item item-input">
+        <input type="text" ng-value="tbl_tareas.id_tarea" ng-model="tbl_tareas1.id_tarea">
+      </label>
+
+      <label class="item item-input">
+        <input type="text" ng-value="tbl_tareas.nombreTarea" ng-model="tbl_tareas1.nombreTarea">
+      </label>
+
+      <label class="item item-input">
+        <input type="text" ng-value="tbl_tareas.estatus" ng-model="tbl_tareas1.estatus">
+      </label>
+
+      <label class="item item-input">
+        <input type="text" ng-value="tbl_tareas.autor" ng-model="tbl_tareas1.autor">
+      </label>
+
+      <label class="item">
+        <button class="button button-block button-positive" type="submit" ng-click="actualizarTareas()">Editar</button>
+      </label>
+    </div>
+
+  </ion-content>
+</ion-view>

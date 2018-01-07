@@ -1,0 +1,29 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Ingresar Tareas</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Tarea</span>
+          <input type="text" placeholder="nombre tarea..." ng-model="loginData.nombreTarea">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Estatus</span>
+          <input type="text" placeholder="estatus..." ng-model="loginData.estatus">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Autor</span>
+          <input type="text" placeholder="autor..." ng-model="loginData.autor">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit" ng-click="ingresarTareas()">Guardar</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

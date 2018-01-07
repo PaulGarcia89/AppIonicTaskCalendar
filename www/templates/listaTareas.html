@@ -1,0 +1,24 @@
+<ion-view view-title="Lista de Tareas">
+  <ion-content class="padding">
+    <div class="list" ng-repeat="tarea in listaTareas">
+      <ion-list>
+        <ion-item>
+          
+          <h2>{{tarea.id_tarea}}</h2>
+          <h2>{{tarea.nombreTarea}}</h2>
+          <h3>{{tarea.estatus}}</h3>
+          <p displayFormat="MM/DD/YYYY">{{tarea.createdAt.substr(0, 10)}}</p>
+
+          <div class="row">
+            <div class="col"></div>
+            <div class="col"><button ui-sref="app.editarTarea" class="button icon-left ion-edit" ng-click="recuperarTareasID(tarea)"></button></div>
+            <div class="col"><button class="button icon-left ion-trash-a" ng-click="eliminarTareas(tarea)">
+            </button></div>
+            <div class="col"></div>
+          </div>
+
+        </ion-item>
+      </ion-list>
+    </div>
+  </ion-content>
+</ion-view>
